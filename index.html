@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://kit.fontawesome.com/8942bce939.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Os 4 pilares da P.O.O. - Nathalia Almeida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/cd.ico.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://alu-cek.com.br/web/wp-content/uploads/2016/09/logo-senai.fw_.png" width="150px">
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="index.html" class="home">home</a>
+                    <a href="FAQs.html">FAQs</a>s</a>
+                    <a href="bibliografia.html">bibliografia</a>
+                </nav>
+            </div>
+            <div class="contato">
+                <a href="mailto: nathalia.yoshioka.dev2024@gmail.com"><button><i class="fa-regular fa-envelope"></i></button></a>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="gradient"><b>OS QUATRO PILARES DA PROGRAMAÇÃO ORIENTADA A OBJETOS (P.O.O.)</b></h1>
+    <h2 class="subtitle">Encapsulamento, Herança, Abstração e Polimorfismo.</h2>
+    <br> <br> 
+    <h2 class="title2"> O que é a Programação Orientada a Objetos?</h2><br>
+    <p style=color:#000;>
+        A <b>Programação Orientada a Objetos</b> é um modelo de programação baseada em objetos, que podem ser qualquer coisa no mundo real, seja ela inanimada ou não. Os objetos possuem características (que são chamadas de atributos) e ações praticáveis (que são chamadas de métodos) e eles são definidos como instâncias em classes, que são uma espécie de molde que define as possiveis características e ações do objeto. <br> <br> A P.O.O. é fundamentada a partir de quatro pilares principais, que garantem a aplicação correta do modelo. São eles: 
+        <br><br>
+    </p>
+    <br>
+    <h2 class="title2"> Encapsulamento</h2>
+    <br>
+    <p>
+        O encapsulamento é o agrupamento de coisas que fazem sentido para manter a integridade dos seus dados. Assim como um mercado tem setores que agrupam produtos semelhantes para melhor organização, um código encapsulado possui classes que agrupam variáveis e funções que conversam entre si, de forma que a alteração dos detalhes de implementação não afete o restante do sistema. Por exemplo: 
+        <br>
+        No setor de produtos de limpeza, temos um desinfetante de uma determinada marca, com um determinado preço e esse conjunto de dados (classe) refere-se à aplicação do encapsulamento, que visa controlar o acesso à esses dados para que somente os funcionários encarregados desse setor (métodos da classe) possam manipulá-los.
+    </p>
+    <img src="img/encapsulamento.png"  class="imagens">
+    <p>
+        Na imagem acima, há variáveis privadas com métodos públicos que permitem a alteração dos dados sem a alteração do código, isso evita que outros programadores cometam erros ao manipular os dados da classe. No nosso exemplo anterior, isso seria como permitir que os produtos mudem de posição dentro do setor sem que outros funcionários tenham seus trabalhos afetados.
+    </p>
+    <br>
+    <h3 class="beneficios"> <u>Principais benefícios:</u> </h3>
+    <br>
+    <ul class="beneficiosItens">
+        <li><b>Manutenibilidade:</b> Ao tornar mais fácil a realização de alterações, facilita-se a manutenção do programa.</li>
+        <br>
+        <li><b>Economia de tempo:</b> As classes encapsuladas evitam o esforço e tempo gasto com determinada parte do desenvolvimento do código, facilitando sua reutilização com a inserção de suas respectivas classes.</li>
+        <br>
+        <li><b>Debugging otimizado:</b> Um erro em uma classe encapsulada é mais fácil de ser identificado e corrigido, já que, a manutenibilidade se torna muito mais precisa.</li>  
+    </ul>
+    <br> <br>
+    <h2 class="title2">Herança</h2>
+    <br>
+    <p>
+        A herança pode ser interpretada em seu sentido literal. Ela refere-se à cópia de características de uma classe com pequenas adições que evitaria a repetição das estruturas de decisão. De forma genética, por exemplo, os filhos podem <b>herdar</b> características físicas com pequenas diferenças, como quando se há semelhanças na feição entre pais e filhos, mas, há também características únicas em cada um. <br>
+        Em um código, esse conceito se aplicaria como a criação de uma classe que utiliza as funções de uma superclasse para apresentar alguma variação adicional em uma subclasse. 
+    </p>
+    <img src="img/herança1.png" class="imagens">
+    <img src="img/herança2.png" class="imagens2">
+
+    <p>
+        No exemplo acima, a superclasse referente à animais, que pode abordar qualquer tipo de animal, foi herdada na subclasse, que aborda de forma especifica o animal cachorro. A herança tem como objetivo especializar atributos reaproveitando o código generalizado.
+    </p>
+    <br>
+    <h3 class="beneficios"> <u>Principais benefícios:</u> </h3>
+    <br>
+    <ul class="beneficiosItens">
+        <li><b>Reutilização:</b> As subclasses reutilizam métodos e atributos de superclasses para evitar a duplicidade do código.</li>
+        <br>
+        <li><b>Manutenibilidade:</b> Alterações feitas na superclasse são automaticamente replicadas para todas as subclasses, facilitando a manutenção.</li>
+        <br>
+        <li><b>Estrutura:</b> O código é organizado de maneira hierárquica, facilitando o entendimento e a estruturação.</li>
+        <br>
+        <li><b>Extensibilidade e flexibilidade:</b> A utilização de subclasses permite a criação de novas vertentes sem a alteração do código atual, isto é, para adicionar novas funcionalidades ou variações, basta criar novas subclasses.</li>
+    </ul>
+    <br><br>
+    <h2 class="title2">Abstração</h2>
+    <br>
+    <p>
+        A abstração pode ser resumida como a ocultação de informações com exposição desnecessária. Por exemplo, ao fazer um resumo escolar, selecionamos apenas as partes necessárias para o entendimento do aluno e descartamos informações que não mudam a qualidade das informações. Nesse sentido, as propriedades e os métodos que não precisam ser vistos no mundo exterior ao objeto, são <b>ocultados</b>, mas permanecem no código.
+    </p>
+    <img src="img/abstração1.png" class="imagens">
+    <img src="img/abstração2.png" class="imagens3">
+    <p>
+        No exemplo acima, a classe abstrata <b>“Banco”</b> define como essenciais os métodos abstratos <b>“sacar”</b> e <b>“depositar”</b>, enquanto a classe <b>“ContaCorrente”</b> implementa os métodos abstratos com maior especificação e detalhamento dos respectivos métodos de manipulação de saldo. Assim, ao adentrarmos a classe principal, lidamos com operações de depósito e saque sem que haja a necessidade de se aprofundar nos detalhes do processamento interno das operações feitas na conta corrente.
+    </p>
+    <br>
+    <h3 class="beneficios"> <u>Principais benefícios:</u> </h3>
+    <br>
+    <ul class="beneficiosItens">
+        <li><b>Redução da complexidade:</b> Simplifica o desenvolvimento de software ao permitir que os desenvolvedores se concentrem apenas nos aspectos essenciais de um objeto, ignorando detalhes irrelevantes.</li>
+        <br>
+        <li><b>Reutilização de código:</b> Promove a reutilização de código, pois as abstrações podem ser usadas em diferentes partes de um aplicativo ou em diferentes projetos.</li>
+        <br>
+        <li><b>Manutenibilidade:</b> Facilita a manutenção do código, já que modificações em uma abstração são herdadas por todas as suas subclasses.</li>
+        <br>
+        <li><b>Segurança:</b> Aumenta a segurança do aplicativo, pois apenas os detalhes importantes são expostos ao usuário, escondendo a implementação interna.</li>
+        <br>
+        <li><b>Modularidade:</b> Ajuda a criar código mais modular e organizado, tornando o sistema mais fácil de entender e gerenciar.</li>
+    </ul>  
+    <br><br>  
+    <h2 class="title2">Polimorfismo</h2>
+    <br>
+    <p>
+        O polimorfismo permite a mesma interpretação de vários objetos, mesmo que sejam de diferentes classes. Pensando no mundo real, temos diferentes jogadores de um determinado esporte que possui habilidades únicas, mas, que atuam na mesma posição. Seria como englobar todos os zagueiros do mundo como uma coisa só, sem se importar com altura, peso, velocidade média, etc. Portanto, o polimorfismo é a generalização de objetos de diferentes classes.
+    </p>
+    <img src="img/polimorfismo1.png" class="imagens" width="700px">
+    <img src="img/polimorfismo2.png" class="imagens2" width="700px">
+    <p>
+        No exemplo acima, o polimorfismo foi utilizado para diferentes espécies de animais em diferentes classes sejam tratados como objeto “Animal”, que independe de suas classes especificas.
+    </p>
+    <br>
+    <h3 class="beneficios"> <u>Principais benefícios:</u> </h3>
+    <br>
+    <ul class="beneficiosItens">
+        <li><b>Flexibilidade:</b> Permite que uma única interface seja usada para representar diferentes tipos de objetos, facilitando a extensão e a modificação do código sem grandes mudanças.</li>
+        <br>
+        <li><b>Reutilização de código:</b> Promove a reutilização de código ao permitir que métodos com a mesma assinatura tenham implementações diferentes em subclasses.</li>
+        <br>
+        <li><b>Modularidade:</b> Ajuda a criar sistemas mais modulares e organizados, tornando o código mais fácil de entender e manter.</li>
+        <br>
+        <li><b>Extensibilidade:</b> Facilita a adição de novas funcionalidades sem alterar o código existente, apenas criando novas subclasses ou implementações.</li>
+        <br>
+        <li><b>Manutenibilidade:</b> Simplifica a manutenção do código, pois mudanças em métodos polimórficos podem ser feitas em um único lugar e refletidas em todas as subclasses.</li>
+    </ul>
+    <br><br><br><br><br><br><br><br>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="https://alu-cek.com.br/web/wp-content/uploads/2016/09/logo-senai.fw_.png" width="150px">
+                    </div>
+                    <div class="contato">
+                        <a href="mailto: nathalia.yoshioka.dev2024@gmail.com"><button><i class="fa-regular fa-envelope"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

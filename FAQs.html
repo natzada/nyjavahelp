@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="https://kit.fontawesome.com/8942bce939.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas Frequentes - Nathalia Almeida</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="shortcut icon" href="img/cd.ico.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="https://alu-cek.com.br/web/wp-content/uploads/2016/09/logo-senai.fw_.png" width="150px">
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="index.html">home</a>
+                    <a href="FAQs.html" class="faq">FAQs</a>
+                    <a href="bibliografia.html">bibliografia</a>
+                </nav>
+            </div>
+            <div class="contato">
+                <a href="mailto: nathalia.yoshioka.dev2024@gmail.com"><button><i class="fa-regular fa-envelope"></i></button></a>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="gradient"><b>PERGUNTAS FREQUENTES</b></h1>
+    <h2 class="subtitle">Respondendo algumas das perguntas mais frequentes a respeito dos 4 pilares da Programação Orientada a Objetos</h2>
+    <br><br>
+    <h2 class="title2">Encapsulamento</h2>
+        <section>
+            <details>
+                <summary class="title3"><b>Quais são os impactos do encapsulamento na performance de uma aplicação?</b></summary>
+                <p> O encapsulamento geralmente tem um impacto mínimo na performance. No entanto, o uso excessivo de métodos getter e setter pode introduzir uma pequena sobrecarga. A principal vantagem do encapsulamento é a melhoria na manutenção e na segurança do código, que geralmente supera qualquer impacto negativo na performance.</p> <br>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Quais são as melhores práticas para definir os níveis de acesso (private, protected, public) em uma classe complexa?</b></summary>
+                <p> Use private para atributos e métodos que não devem ser acessados fora da classe. Utilize protected para membros que devem ser acessíveis por subclasses. Reserve public para métodos que precisam ser acessíveis por outras classes. Sempre prefira o menor nível de acesso possível para manter a integridade dos dados.</p> <br>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Como o encapsulamento pode ajudar na implementação de APIs robustas?</b></summary>
+                <p> Encapsulamento permite que você esconda a complexidade interna de uma API, expondo apenas os métodos necessários para os usuários finais. Isso facilita a manutenção e evolução da API, pois mudanças internas não afetam os consumidores da API, desde que a interface pública permaneça consistente.</p> <br>
+            </details>
+        </section>
+    <br>
+    <h2 class="title2">Herança</h2>
+        <section>
+            <details>
+                <summary class="title3"><b>Quais são os desafios e armadilhas comuns ao usar herança múltipla em linguagens que a suportam, e como evitá-los em Java?</b></summary>
+                <p> Herança múltipla pode levar a problemas como a “Diamond Problem”, onde uma classe herda de duas classes que têm um ancestral comum. Em Java, isso é evitado usando interfaces em vez de herança múltipla de classes, permitindo que uma classe implemente múltiplas interfaces sem os problemas associados.</p> <br>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Como a herança pode afetar a performance de uma aplicação Java?</b></summary>
+                <p> Herança pode introduzir sobrecarga de tempo de execução devido à necessidade de resolver chamadas de métodos em uma hierarquia de classes. Isso pode ser mitigado mantendo hierarquias de herança simples e evitando herança profunda.</p> <br>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Quais são as alternativas à herança para reutilização de código e quando elas devem ser preferidas?</b></summary>
+                <p> Composição é uma alternativa à herança, onde uma classe é composta de objetos de outras classes. Prefira composição quando a relação “tem um” faz mais sentido do que “é um”, ou quando você deseja evitar a rigidez e complexidade da herança.</p> <br>
+            </details>
+        </section>
+    <br>
+    <h2 class="title2">Abstração</h2>
+        <section>
+            <details>
+                <summary class="title3"><b>Como a abstração pode ser usada para facilitar a integração com APIs externas?</b></summary>
+                <p> Abstração pode ser usada para criar camadas de adaptação que traduzem chamadas de API externas para chamadas internas do sistema. Isso facilita a integração ao desacoplar o código interno das especificidades da API externa, permitindo mudanças na API sem afetar o restante do sistema.</p> <br>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Como a abstração pode ser usada para facilitar a migração de sistemas legados?</b></summary>
+                <p> Abstração pode criar uma camada intermediária que traduz chamadas de sistemas legados para novos sistemas, permitindo uma migração gradual. Isso minimiza o impacto nas operações enquanto o sistema é atualizado.</p> <br>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Quais são os desafios de manter a consistência de abstrações em um sistema em evolução?</b></summary>
+                <p> Manter a consistência de abstrações pode ser desafiador à medida que novos requisitos surgem. É importante revisar e refatorar abstrações regularmente para garantir que elas continuem a representar corretamente os conceitos do domínio.</p> <br>
+            </details>
+        </section>
+    <br>
+    <h2 class="title2">Polimorfismo</h2>
+        <section>
+            <details>
+                <summary class="title3"><b>Como o polimorfismo pode ser usado para implementar sistemas de plugins?</b></summary>
+                <p> Polimorfismo permite que diferentes plugins implementem uma interface comum, permitindo que o sistema carregue e execute plugins de forma intercambiável. Isso facilita a adição de novos plugins sem modificar o código existente.</p> <br>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Quais são os desafios de depuração em sistemas que fazem uso extensivo de polimorfismo?</b></summary>
+                <p> epurar sistemas polimórficos pode ser desafiador devido à dificuldade de rastrear qual implementação de método está sendo chamada em tempo de execução. Ferramentas de depuração e boas práticas de logging podem ajudar a mitigar esses desafios.</p> <br>
+            </details>
+
+            <details>
+                <summary class="title3"><b>Como o polimorfismo pode ser explorado para melhorar a escalabilidade de uma aplicação?</b></summary>
+                <p> Polimorfismo permite que novas funcionalidades sejam adicionadas através de novas implementações de interfaces ou classes base, sem modificar o código existente. Isso facilita a expansão e a adaptação da aplicação a novos requisitos.</p> <br>
+            </details>
+        </section>
+    <br> <br> <br> <br> <br>
+    
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <img src="https://alu-cek.com.br/web/wp-content/uploads/2016/09/logo-senai.fw_.png" width="150px">
+                    </div>
+                    <div class="contato">
+                        <a href="mailto: nathalia.yoshioka.dev2024@gmail.com"><button><i class="fa-regular fa-envelope"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
